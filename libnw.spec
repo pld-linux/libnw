@@ -32,7 +32,7 @@ danych z gry NeverWinter Nights firmy BioWare.
 Summary:	Header files for libnw library
 Summary(pl):	Pliki nag³ówkowe biblioteki libnw
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libnw library.
@@ -44,7 +44,7 @@ Pliki nag³ówkowe biblioteki libnw.
 Summary:	Static libnw library
 Summary(pl):	Statyczna biblioteka libnw
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libnw library.
@@ -56,7 +56,7 @@ Statyczna biblioteka libnw.
 Summary:	libnw - utilities programs
 Summary(pl):	libnw - programy narzêdziowe
 Group:		Applications/Games
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description utils
 Several programs for extracting and manipulating resources from
