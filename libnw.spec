@@ -14,8 +14,7 @@ URL:		http://openknights.sourceforge.net/
 BuildRequires:	awk
 BuildRequires:	bison
 BuildRequires:	flex
-BuildRequires:	perl
-#Requires:
+BuildRequires:	perl >= 5.6.0
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
