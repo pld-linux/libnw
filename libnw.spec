@@ -6,7 +6,7 @@ Summary:	libnw - NeverWinter Night game resources manupulation tool
 Summary(pl):	libnw - narzêdzia do edycji zasobów gry NeverWinter Night
 Name:		libnw
 Version:	1.30.02
-Release:	0.1
+Release:	1
 License:	BSD
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/openknights/%{name}-%{version}.tar.gz
