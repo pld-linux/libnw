@@ -76,7 +76,7 @@ Nights firmy BioWare.
 %{__automake}
 %{__autoconf}
 %configure \
-	%{?without_static:--disable-static}
+	%{!?with_static:--disable-static}
 
 %{__make}
 
