@@ -1,11 +1,11 @@
 #
 %bcond_without static	# don't build static
 
-Summary:	libnw - platform-independent routines for manipulation of NWN resources
-Summary(pl):	libnw -
+Summary:	libnw - NeverWinter Night game resources manupulation tool
+Summary(pl):	libnw - narzêdzia do edycji zasobów gry NeverWinter Night
 Name:		libnw
 Version:	1.30.02
-Release:	0
+Release:	0.1
 Copyright:	GPL
 Group:		Games/Utilities
 Source0:	http://dl.sourceforge.net/openknights/%{name}-%{version}.tar.gz
@@ -49,7 +49,7 @@ Requires:	%{name} = %{version}
 %package utils
 Summary:	libnw - utilities programs
 Summary(pl):	libnw - programy narzêdziowe.
-Group:		Development/Games
+Group:		Games/Utilities
 Requires:	%{name} = %{version}
 %description utils
 -- empty --
