@@ -1,5 +1,8 @@
-Summary:	libnw
-Summary(pl):	libnw
+#
+%bcond_without static	# don't build static
+
+Summary:	libnw - platform-independent routines for manipulation of NWN resources
+Summary(pl):	libnw -
 Name:		libnw
 Version:	1.30.02
 Release:	0
@@ -16,29 +19,46 @@ BuildRequires:	perl
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+-- empty --
 
 %description -l pl
+-- pusty --
 
 %package devel
-Summary:	libnw -
-Summary(pl):	libnw -
+Summary:	libnw - development files
+Summary(pl):	libnw - pliki nag³ówkowe
 Group:		Development/Games
 Requires:	%{name} = %{version}
 %description devel
+-- empty --
+
 %description -l pl devel
+-- pusty --
 
 %package static
-Summary:	libnw -
-Summary(pl):	libnw -
+Summary:	libnw - static library
+Summary(pl):	libnw - biblioteka statyczna
 Group:		Development/Games
 Requires:	%{name} = %{version}
 %description static
+-- empty --
+
 %description -l pl static
+-- pusty --
+
+%package utils
+Summary:	libnw - utilities programs
+Summary(pl):	libnw - programy narzêdziowe.
+Group:		Development/Games
+Requires:	%{name} = %{version}
+%description utils
+-- empty --
+
+%description -l pl utils
+-- pusty --
 
 %prep
 %setup -q
-
-#%patch
 
 %build
 %{__aclocal}
@@ -63,16 +83,23 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc
-%attr(755,root,root) %{_libdir}/libnw.0.0.0
-%attr(,,)
+%{_libdir}/libnw.0.0.0
+%{_datadir}/%{name}/*
+%{_mandir}/man3/*
 
 %files devel
 %defattr(644, root, root, 755)
 %doc
-%attr(755, root, root) %{_libdir}/libnw.la
-%attr(644, root, root) %{_includedir}/libnw/*.h
+%{_libdir}/libnw.la
+%{_includedir}/libnw/*.h
 
+%if %{with static}
 %files static
 %defattr(644,root,root,755)
 %doc
-%attr(644,root,root) %{_libdir}/libnw.a
+%{_libdir}/libnw.a
+%endif
+
+%files utils
+%{_bindir}/*
+%{_mandir}/man1/*
