@@ -96,12 +96,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog NEWS README README.License-Torlack README.tech TODO
 %attr(755,root,root) %{_libdir}/libnw.so.*.*.*
+%attr(755,root,root) %{_libdir}/libnw.so
 %{_datadir}/%{name}
 %{_mandir}/man3/*
 
 %files devel
 %defattr(644, root, root, 755)
-%attr(755,root,root) %{_libdir}/libnw.so
 %{_libdir}/libnw.la
 %{_includedir}/libnw
 
