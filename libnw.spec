@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without static	# don't build static library
+%bcond_without	static	# don't build static library
 #
 Summary:	libnw - NeverWinter Night game resources manupulation tool
 Summary(pl):	libnw - narzêdzia do edycji zasobów gry NeverWinter Night
