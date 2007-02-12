@@ -3,7 +3,7 @@
 %bcond_without	static	# don't build static library
 #
 Summary:	libnw - NeverWinter Night game resources manupulation tool
-Summary(pl):	libnw - narz阣zia do edycji zasob體 gry NeverWinter Night
+Summary(pl.UTF-8):   libnw - narz臋dzia do edycji zasob贸w gry NeverWinter Night
 Name:		libnw
 Version:	1.30.02
 Release:	1
@@ -24,37 +24,37 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 libnw is a library of common routines for extracting and manipulating
 resources from BioWare's NeverWinter Nights game.
 
-%description -l pl
-libnw to biblioteka wsp髄nych funkcji do wyci眊ania i przetwarzania
+%description -l pl.UTF-8
+libnw to biblioteka wsp贸lnych funkcji do wyci膮gania i przetwarzania
 danych z gry NeverWinter Nights firmy BioWare.
 
 %package devel
 Summary:	Header files for libnw library
-Summary(pl):	Pliki nag丑wkowe biblioteki libnw
+Summary(pl.UTF-8):   Pliki nag艂贸wkowe biblioteki libnw
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libnw library.
 
-%description devel -l pl
-Pliki nag丑wkowe biblioteki libnw.
+%description devel -l pl.UTF-8
+Pliki nag艂贸wkowe biblioteki libnw.
 
 %package static
 Summary:	Static libnw library
-Summary(pl):	Statyczna biblioteka libnw
+Summary(pl.UTF-8):   Statyczna biblioteka libnw
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libnw library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libnw.
 
 %package utils
 Summary:	libnw - utilities programs
-Summary(pl):	libnw - programy narz阣ziowe
+Summary(pl.UTF-8):   libnw - programy narz臋dziowe
 Group:		Applications/Games
 Requires:	%{name} = %{version}-%{release}
 
@@ -62,8 +62,8 @@ Requires:	%{name} = %{version}-%{release}
 Several programs for extracting and manipulating resources from
 BioWare's NeverWinter Nights game.
 
-%description utils -l pl
-R罂ne programy do wyci眊ania i przetwarzania zasob體 z gry NeverWinter
+%description utils -l pl.UTF-8
+R贸偶ne programy do wyci膮gania i przetwarzania zasob贸w z gry NeverWinter
 Nights firmy BioWare.
 
 %prep
