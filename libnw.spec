@@ -3,7 +3,7 @@
 %bcond_without	static	# don't build static library
 #
 Summary:	libnw - NeverWinter Night game resources manupulation tool
-Summary(pl.UTF-8):   libnw - narzędzia do edycji zasobów gry NeverWinter Night
+Summary(pl.UTF-8):	libnw - narzędzia do edycji zasobów gry NeverWinter Night
 Name:		libnw
 Version:	1.30.02
 Release:	1
@@ -30,7 +30,7 @@ danych z gry NeverWinter Nights firmy BioWare.
 
 %package devel
 Summary:	Header files for libnw library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libnw
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libnw
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -42,7 +42,7 @@ Pliki nagłówkowe biblioteki libnw.
 
 %package static
 Summary:	Static libnw library
-Summary(pl.UTF-8):   Statyczna biblioteka libnw
+Summary(pl.UTF-8):	Statyczna biblioteka libnw
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -54,7 +54,7 @@ Statyczna biblioteka libnw.
 
 %package utils
 Summary:	libnw - utilities programs
-Summary(pl.UTF-8):   libnw - programy narzędziowe
+Summary(pl.UTF-8):	libnw - programy narzędziowe
 Group:		Applications/Games
 Requires:	%{name} = %{version}-%{release}
 
